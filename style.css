@@ -1,0 +1,294 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  }
+
+body {
+background: #fff9fc;
+color: #49344d;
+}
+
+header {
+background: white;
+padding: 18px 7%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+header h1 {
+color: #bd397b;
+font-size: 32px;
+}
+
+nav a {
+text-decoration: none;
+color: #49344d;
+margin-left: 25px;
+}
+
+nav a:hover {
+color: #d23883;
+}
+
+.hero {
+width:100% ;
+background: #f9dced;
+}
+
+.hero-text {
+width: 48%;
+padding: 35px 0 35px 9%;
+}
+
+.hero h2 {
+color: #b83278;
+font-family: Georgia, serif;
+font-size: 44px;
+margin-bottom: 18px;
+}
+
+.hero p {
+font-size: 18px;
+line-height: 1.7;
+}
+
+.hero img {
+display:block;
+width:100%;
+height:auto;
+}
+
+.cards {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+padding: 35px 7%;
+}
+
+.card {
+display: flex;
+gap: 18px;
+align-items: flex-start;
+padding: 25px 18px;
+background: white;
+border: 1px solid #f4e3ef;
+border-radius: 16px;
+box-shadow: 0 4px 12px #eedee8;
+}
+
+.card:nth-child(even) {
+background: #fbf2fc;
+}
+
+.icon {
+font-size: 38px;
+background: #fff0f7;
+border-radius: 50%;
+padding: 12px;
+}
+
+.card h2 {
+font-family: Georgia, serif;
+font-size: 20px;
+margin-bottom: 12px;
+color: #503456;
+}
+
+.card p {
+font-size: 15px;
+line-height: 1.7;
+color: #66556b;
+}
+
+details {
+margin-top: 15px;
+}
+
+summary {
+color: #c52d79;
+cursor: pointer;
+font-weight: bold;
+list-style: none;
+}
+
+details p {
+margin-top: 12px;
+}
+
+.quote {
+background: #fceaf4;
+border-radius: 16px;
+padding: 30px 15px;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.quote p {
+font-family: Georgia, serif;
+font-style: italic;
+font-size: 25px;
+line-height: 1.7;
+color: #bd397b;
+}
+
+.quote span {
+font-size: 30px;
+color: #d95393;
+margin-top: 12px;
+}
+
+footer {
+background: #493047;
+color: white;
+text-align: center;
+padding: 22px;
+}
+
+@media (max-width: 800px) {
+header {
+flex-direction: column;
+gap: 18px;
+}
+
+nav a {
+    margin: 5px;
+}
+
+.hero {
+    flex-direction: column;
+}
+/* Inner Pages */
+
+.page-heading {
+    text-align: center;
+    padding: 45px 20px;
+    background: #fff0f6;
+    color: #30264d;
+}
+
+.page-heading h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.page-heading p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    padding: 35px 8%;
+    background: #fff8fb;
+}
+
+.info-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #f3e5ee;
+    box-shadow: 0 4px 12px rgba(48, 38, 77, 0.08);
+}
+
+.info-card h3 {
+    color: #c94b83;
+    margin-bottom: 12px;
+}
+
+.info-card p {
+    color: #51485d;
+    line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+    .info-container {
+        grid-template-columns: 1fr;
+        padding: 25px 6%;
+    }
+}
+
+.hero-text {
+    width: 100%;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 35px;
+}
+
+.hero img {
+    width: 100%;
+    height: 280px;
+    border-radius: 0;
+}
+
+.cards {
+    grid-template-columns: 1fr;
+}
+};
+/* Inner Pages */
+
+.page-heading {
+    text-align: center;
+    padding: 45px 20px;
+    background: #fff0f6;
+    color: #30264d;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.page-heading h2 {
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.page-heading p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.7;
+    padding: 10px;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    padding: 35px 8%;
+    background: #fff8fb;
+}
+
+.info-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #f3e5ee;
+    box-shadow: 0 4px 12px rgba(48, 38, 77, 0.08);
+}
+
+.info-card h3 {
+    color: #c94b83;
+    margin-bottom: 12px;
+}
+
+.info-card p {
+    color: #51485d;
+    line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+    .info-container {
+        grid-template-columns: 1fr;
+        padding: 25px 6%;
+    }
+};
